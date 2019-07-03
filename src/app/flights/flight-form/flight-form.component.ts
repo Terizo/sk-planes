@@ -45,7 +45,7 @@ export class FlightFormComponent implements OnInit {
       destination: ['', [Validators.required] ],
       departureTime: ['',[Validators.required] ],
       returnTime: ['', [Validators.required] ],
-      code: ['SK', [Validators.required, Validators.minLength(3), Validators.maxLength(7)] ],
+      code: ['SK', [Validators.required, Validators.minLength(4), Validators.maxLength(7)] ],
       additionalInformation: '',
       withSKPlanesDiscount: false,
       crew: this.formBuilder.array([this.buildCrewMember()])
