@@ -30,7 +30,6 @@ export class FlightFormComponent implements OnInit {
 
   addCrewMember(){
     this.crew.push(this.buildCrewMember());
-    console.log(this.form);
   }
 
   buildCrewMember() {
@@ -49,7 +48,7 @@ export class FlightFormComponent implements OnInit {
       code: '',
       additionalInformation: '',
       withSKPlanesDiscount: false,
-      crew: this.formBuilder.array([this.buildCrewMember])
+      crew: this.formBuilder.array([this.buildCrewMember()])
   })
   }
 

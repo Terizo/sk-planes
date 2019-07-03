@@ -46,7 +46,7 @@
         <div class="row crew-header">
             <div class="col">
                 <span>Crew Member - {{ index + 1}}</span>
-                <mat-icon class="float-right" (click)="removeCrewMember(index);">delete_forever</mat-icon>
+                <mat-icon class="float-right crew-delete" (click)="removeCrewMember(index);">delete_sweep</mat-icon>
             </div>
         </div>
         <div class="row" [formGroupName]="index">
