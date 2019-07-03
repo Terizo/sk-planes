@@ -8,6 +8,7 @@ import { FlightsModule } from './flights/flights.module';
 import { environment } from '../environments/environment.prod';
 import { MaterialModule } from './material/material.module';
 import { CoreModule } from './core/core.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent
@@ -20,6 +21,7 @@ import { CoreModule } from './core/core.module';
     AngularFireModule.initializeApp(environment.firebase),
     MaterialModule,
     AngularFireDatabaseModule,
+    BrowserAnimationsModule,
     FlightsModule
 
   ],
