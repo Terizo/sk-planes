@@ -15,13 +15,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent
   ],
   imports: [
-
-  BrowserModule,
+    BrowserModule,
     CoreModule,
+    AngularFireAuthModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     MaterialModule,
-    AngularFireAuthModule,
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
     FlightsModule
