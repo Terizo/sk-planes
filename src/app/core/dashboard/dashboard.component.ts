@@ -9,13 +9,14 @@ import { Router}  from '@angular/router';
 })
 export class DashboardComponent {
   user = this.authServise.user;
+  
   constructor(
     private router: Router,
     private authServise: AuthService
-    ){
-  }
+    ){ }
 
   logout(){
-    this.authServise.logout().then(() => this.router.navigate(['/login']));
+    this.authServise.logout()
+    .then(() => this.router.navigate(['/login']));
   }
 }

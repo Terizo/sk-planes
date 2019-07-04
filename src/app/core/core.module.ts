@@ -8,13 +8,13 @@ import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [DashboardComponent, LoginComponent, PageNotFoundComponent],
   imports: [
     CommonModule,
     MaterialModule,
     RouterModule,
     FormsModule
   ],
+  declarations: [DashboardComponent, LoginComponent, PageNotFoundComponent],
   exports: [DashboardComponent, LoginComponent]
 })
 export class CoreModule { }

@@ -16,9 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     CoreModule,
-    AngularFireAuthModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
     MaterialModule,
     AngularFireDatabaseModule,
     BrowserAnimationsModule
