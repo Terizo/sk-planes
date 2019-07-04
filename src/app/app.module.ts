@@ -9,9 +9,11 @@ import { environment } from '../environments/environment.prod';
 import { MaterialModule } from './material/material.module';
 import { CoreModule } from './core/core.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { EditFlightComponent } from './flights/edit-flight/edit-flight.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditFlightComponent
   ],
   imports: [
 

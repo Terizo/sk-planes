@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col">
         <h3>FLIGHT DETAILS</h3>
-        <mat-icon class="float-right" (click)="close()">close</mat-icon>
+        <mat-icon class="float-right flight-details-close" (click)="close()">close</mat-icon>
         <p class="label">Code: {{ flight.code }}</p>
         <p class="label">Crew:</p>
         <ul>
@@ -9,7 +9,7 @@
                 {{ member.name }}
             </li>
         </ul>
-        <button mat-raised-button color="primary" class="float-right">
+        <button mat-raised-button color="primary" class="float-right" (click)="gotToEditFlight()">
             EDIT FLIGHT
         </button>
     </div>
