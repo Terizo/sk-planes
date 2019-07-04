@@ -23,6 +23,15 @@ export class FlightsService {
     
   }
 
+  editFlight(key: string, flight: Flight){
+    return this.db.object<Flight>(`${this.API_URL}/${key}`).update(flight);
+  }
+
+  removeFlight(key: string){
+    return this.db.object<Flight>(`${this.API_URL}/${key}`).remove();
+  }
+
+
   addFlights(flight: Flight) {
     return this.db.list<Flight>(this.API_URL).push(flight);
   }
