@@ -31,4 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 // gitpages 
 
-ng build --prod --base-href="https://[name].github.io/[repository]/"
+ng build --prod --base-href="https://[name].github.io/<repository>/"
+
+ngh --dir dist/[name-cat]
